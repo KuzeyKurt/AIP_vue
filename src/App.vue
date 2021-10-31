@@ -1,7 +1,12 @@
 <template>
   <v-app>
       <v-navigation-drawer app v-model="drawer">
-          <v-list-item>
+          <v-list-item
+                       v-for="link in links"
+ :key="link.title"
+ :to="link.url"
+>
+
               <v-list-item-content>
                   <v-list-title class="title">
                        »œ”
@@ -38,15 +43,18 @@
          
 
       </v-navigation-drawer> 
-  <v-app-bar app dark color="indigo lighten-1">
-    <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-    <v-spacer></v-spacer>
-    <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn text><v-icon left>mdi-home</v-icon>Link One</v-btn>
-        <v-btn text>Link Two</v-btn>
-        <v-btn text>Link Three</v-btn>
-    </v-toolbar-items>
-  </v-app-bar>
+
+
+      <v-app-bar app dark color="indigo lighten-1">
+          <v-btn v-for="link in links"
+                 :key="link.title"
+                 :to="link.url"
+                 text><v-icon left>{{ link.icon }}</v-icon>{{ link.title }}</v-btn>
+
+          <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+          <v-spacer></v-spacer>
+          
+      </v-app-bar>
 
   <v-content>
     <router-view></router-view> 
