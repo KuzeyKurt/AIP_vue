@@ -11,7 +11,7 @@ import Orders from '@/components/User/Orders'
 export default new Router({
     routes:[
     {
-        path: "",
+        path: " ",
         name: "home",
         component: Home
     },

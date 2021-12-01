@@ -9,7 +9,7 @@
 
               <v-list-item-content>
                   <v-list-title class="title">
-                       »œ”
+                      –ö–ò–ü–£
                   </v-list-title>
                   <v-list-item-subtitle>
                       Study project
@@ -43,8 +43,6 @@
          
 
       </v-navigation-drawer> 
-
-
       <v-app-bar app dark color="indigo lighten-1">
           <v-btn v-for="link in links"
                  :key="link.title"
@@ -70,13 +68,11 @@ export default {
         drawer: false,
 
         links: [
-            { title: "About university", icon: "mdi-bank", url: "/login" },
-            { title: "For abiturient", icon: "mdi-book", url: "/login" },
-            { title: "For student", icon: "mdi-book-open-variant", url: "/registration" },
-            { title: "For employee", icon: "mdi-bag-checked", url: "/orders" },
-            { title: "Science", icon: "mdi-math-compass", url: "/new" },
-            { title: "Events", icon: "mdi-account-group", url: "/list" },
-            { title: "Contacts", icon: "mdi-phone", url: "/list" }
+            { title: "Login", icon: "mdi-lock", url: "/login" },
+            { title: "Registration", icon: "mdi-book-open-variant", url: "/registration" },
+            { title: "Orders", icon: "mdi-bookmark-multiple-outline", url: "/orders" },
+            { title: "New", icon: "mdi-math-compass", url: "/new" },
+            { title: "List", icon: "mdi-account-group", url: "/list" },
         ]
 
     }
