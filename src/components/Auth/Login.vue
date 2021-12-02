@@ -2,6 +2,7 @@
 	<v-container fluid fill-height>
 		<v-layout align-center justify-center> 
 			<v-flex xs12 sm8 md8>
+			<h1 class="text--secondary mb-3 mt-3">Please, login Ad</h1>
 			<v-card class="elevetion-12">
 				<v-toolbar dark color="indigo lighten-1">
 				<v-toolbar-title>
