@@ -73,11 +73,14 @@ export default {
 			const ad = {
 				title: this.title,
 				desc: this.description,
-				promo: this.promo
+				promo: this.promo,
+				src: "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/rtx_3090_21_gbps_memory_micron.png"
 			}
 			console.log(ad)
 			}
 		}
-	}
+	},
+
+
 } 
 </script>

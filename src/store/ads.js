@@ -48,6 +48,8 @@ export default {
             return id => {
             return state.ads.find(ad => ad.id == id)
             }
-        }        
+        },
+        
+                
 }
 }
