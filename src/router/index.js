@@ -42,7 +42,14 @@ export default new Router({
         path: "/orders",
         name: "orders",
         component: Orders
+    },
+    {
+        path:"/ad/:id",
+        props: true,
+        name:"ad",
+        component:Ad
     }
+    
 	],
     mode: 'history'
 

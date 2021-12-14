@@ -4,6 +4,10 @@
     <v-list-item>
       <v-list-item-content>
             <v-list-item-title class="title">
+              <v-img
+                src = "https://yt3.ggpht.com/ytc/AKedOLRCvhZh9AZaL_nN3a78Wqw7WUT9y_WYq2CN5fYV=s900-c-k-c0x00ffffff-no-rj"
+                >
+              </v-img>
               КИПУ
             </v-list-item-title>
             <v-list-item-subtitle>
