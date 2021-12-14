@@ -76,10 +76,11 @@ export default {
 				promo: this.promo,
 				src: "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/rtx_3090_21_gbps_memory_micron.png"
 			}
-			console.log(ad)
+			this.$store.dispatch("createAd", ad)
+
 			}
 		}
-	},
+	}
 
 
 } 

@@ -30,8 +30,18 @@ export default {
                     id:"4"
                 }
             ]},
-	mutations: {},
-	actions: {},
+	mutations: {
+        createAd(state, payload){
+			state.ads.push(payload)
+		}
+
+    },
+	actions: {
+        createAd({commit},payload){
+        payload.id = Math.random()
+        commit('createAd', payload)
+    }
+},
 	getters: {
 		ads(state) {
 			return state.ads
