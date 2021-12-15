@@ -2,31 +2,31 @@ export default {
 	state: {
 		ads:[
                 {
-                    title:"First",
-                    desc:"First Desc",
+                    title:"ZZ TOP",
+                    desc:"The legendary group is coming",
                     promo: true,
-                    src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+                    src: "https://images.greelane.com/proxy?url=https%3A%2F%2Fwww.thoughtco.com%2Fthmb%2FbGQ3QmmPJ_mEWqdObcA_iHCByrw%3D%2F1500x1000%2Ffilters%3Afill%28auto%2C1%29%2FGettyImages-612789276-5c76bafc46e0fb00019b8cf9.jpg&width=750",
                     id:"1"
                 },
                 {
-                    title:"Second",
-                    desc:"Second Desc",
+                    title:"Fantastic Beasts and Crimes of Grindevald",
+                    desc:"Second part of magic saga",
                     promo: true,
-                    src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
+                    src: "https://digitalspyuk.cdnds.net/17/46/768x432/gallery-1510842200-fantastic-beasts-first-look-image-1.jpg",
                     id:"2"
                 },
                 {
-                    title:"Third",
-                    desc:"Thitd Desc",
+                    title:"Spider-Man: No way to home",
+                    desc:"Start of Multiverse",
                     promo: true,
-                    src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+                    src: "https://7nebonnov.ru/upload/iblock/8a5/p2mgv0s89z3uqymqyfc625tgum9hbubo/1920x1080.jpg",
                     id:"3"
                 },
                 {
-                    title:"Fouth",
-                    desc:"Fouth Desc",
+                    title:"Star Wars: Eclipse",
+                    desc:"Story about Old Republic 200 years before Galactic Empire from masters - Quantic Dream",
                     promo: true,
-                    src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+                    src: "https://i.ytimg.com/vi/ER-Rnbiadew/maxresdefault.jpg",
                     id:"4"
                 }
             ]},

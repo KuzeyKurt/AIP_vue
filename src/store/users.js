@@ -1,7 +1,7 @@
-import Vue from 'vue'
-import Vuex from 'vuex'
-import ads from './ads'
-import user from './user'
+// import Vue from 'vue'
+// import Vuex from 'vuex'
+// import ads from './ads'
+// import user from './users'
 import fb from 'firebase'
 
 class User {

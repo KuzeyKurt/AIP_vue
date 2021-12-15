@@ -33,7 +33,7 @@
 					</v-layout>
 					<v-layout row>
 						<v-flex xs12>
-						<img 	src="https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg" height="150" class="mt-3">
+						<img 	src="https://images.greelane.com/proxy?url=https%3A%2F%2Fwww.thoughtco.com%2Fthmb%2FbGQ3QmmPJ_mEWqdObcA_iHCByrw%3D%2F1500x1000%2Ffilters%3Afill%28auto%2C1%29%2FGettyImages-612789276-5c76bafc46e0fb00019b8cf9.jpg&width=750" height="150" class="mt-3">
 						</v-flex>
 					</v-layout>
 					<v-layout row>

@@ -43,7 +43,8 @@
 					<v-btn 
 					color="indigo lighten-3"
 					@click="onSubmit"
-					:disabled="!valid">
+					:loading="loading"
+					:disabled="!valid||loading">
 					Create Account
 					</v-btn>
 				</v-card-actions>	
@@ -71,6 +72,12 @@ export default {
 		]
 		} 	
 	},
+	computed: {
+	loading() {
+		return this.$store.getters.loading
+	}
+	},
+	
 	methods: 
 	{
 		onSubmit()
@@ -85,6 +92,10 @@ export default {
 				this.$store.dispatch('registerUser', user)
 			}
 		}
-	}
+	},
+
+
+
+
 } 
 </script>
