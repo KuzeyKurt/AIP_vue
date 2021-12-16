@@ -34,7 +34,8 @@
 					<v-btn 
 					color="indigo lighten-3"
 					@click="onSubmit"
-					:disabled="!valid">
+					:loading="loading"
+					:disabled="!valid|| loading">
 					Login
 					</v-btn>
 				</v-card-actions>	
@@ -78,9 +79,23 @@ export default {
 					email:this.email,
 					password:this.password
 				}
-				console.log(user)
+				this.$store.dispatch('loginUser', user)
+		.then(() => {
+			this.$router.push("/")
+		})
+		.catch((err) => {
+			console.log(err.message)
+		})
+
 			}
 		}
+	},
+
+	computed: {
+	loading() {
+		return this.$store.getters.loading
 	}
+},
+
 } 
 </script>
