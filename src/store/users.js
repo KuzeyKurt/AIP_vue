@@ -12,6 +12,32 @@ class User {
 
 
 export default {
+
+    computed:
+    {
+        isUserLoggedIn () {
+            return this.$store.getters.isUserLoggedIn
+      },
+
+
+      links () {
+        if (this.isUserLoggedIn) {
+          return [
+          {title:"Orders", icon:"mdi-bookmark-multiple-outline", url:"/orders"},
+          {title:"New ad", icon:"mdi-note-plus-outline", url:"/new"},
+          {title:"My ads", icon:"mdi-view-list-outline", url:"/list"}
+          ]
+        } else {
+          return [
+          {title:"Login", icon:"mdi-lock", url:"/login"},
+          {title:"Registration", icon:"mdi-face", url:"/registration"},
+          ]
+        }
+      }
+  
+    
+    },
+
 	state: {
         user: null
     },
@@ -56,7 +82,7 @@ export default {
 
 	getters: {
         user(state) {
-            return state.user
+            return state.user !== null
 
     },
   
