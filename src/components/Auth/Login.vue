@@ -88,7 +88,14 @@ export default {
 		})
 
 			}
+		},
+
+		created () {
+			if (this.$route.query['loginError']) {
+			this.$store.dispatch('setError','Please login to 	access this page')
 		}
+}
+
 	},
 
 	computed: {
