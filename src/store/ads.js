@@ -81,7 +81,26 @@ export default {
           commit('setLoading', false)
           throw error
         }
+      },
+
+      async fetchAds({commit}) {
+        commit('clearError')
+      commit('setLoading', true)
+      try {
+        const fbVal = await fb.database().ref('ads').once('value')
+        const ads = fbVal.val()
+        console.log(ads)
+        
+        // val()
+        // const resultAds = [5]
+          commit('setLoading', false)
+      }  catch (error) {
+          commit('setError', error.message)
+        commit('setLoading', false)
+        throw error
       }
+},
+
   
 },
 	getters: {

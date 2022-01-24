@@ -72,11 +72,11 @@ export default {
 		]
 		} 	
 	},
-	computed: {
-	loading() {
-		return this.$store.getters.loading
-	}
-	},
+	//computed: {
+	// loading() {
+	// 	return this.$store.getters.loading
+	// }
+	// },
 	
 	methods: 
 	{

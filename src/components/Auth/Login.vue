@@ -91,18 +91,18 @@ export default {
 		},
 
 		created () {
-			if (this.$route.query['loginError']) {
-			this.$store.dispatch('setError','Please login to 	access this page')
+			if (this.$router.query['loginError']) {
+			this.$store.dispatch('setError','Please login to access this page')
 		}
 }
 
 	},
 
-	computed: {
-	loading() {
-		return this.$store.getters.loading
-	}
-},
+// 	computed: {
+// 	loading() {
+// 		return this.$store.getters.loading
+// 	}
+// },
 
 } 
 </script>

@@ -49,7 +49,9 @@
 						<v-spacer></v-spacer>
 						<v-btn 
 						color="success"
-						@click="createAd" 
+						@click="createAd"
+						:loading="loading"
+						:disabled:="!valid || loading" 
 						>Create Ad</v-btn>
 						</v-flex>
 					</v-layout>
@@ -77,9 +79,20 @@ export default {
 				src: "https://www.notebookcheck.net/fileadmin/Notebooks/News/_nc3/rtx_3090_21_gbps_memory_micron.png"
 			}
 			this.$store.dispatch("createAd", ad)
+			.then(() => {
+			this.$router.push("/list")
+			})
+			.catch(() => {})
+
 
 			}
-		}
+		},
+		computed: {
+			loading() {
+			return this.$store.getters.loading
+	}
+},
+
 	}
 
 

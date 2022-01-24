@@ -21,7 +21,7 @@ export default {
 
 
       links () {
-        if (this.isUserLoggedIn) {
+        if (this.$isUserLoggedIn) {
           return [
           {title:"Orders", icon:"mdi-bookmark-multiple-outline", url:"/orders"},
           {title:"New ad", icon:"mdi-note-plus-outline", url:"/new"},
@@ -82,9 +82,11 @@ export default {
 
 	getters: {
         user(state) {
-            return state.user !== null
-
-    },
+               return state.user
+       },
+       isUserLoggedIn (state) {
+           return state.user !== null
+       }
   
     
 }

@@ -66,7 +66,7 @@ export default {
 		position:absolute;
 		bottom: 50px;
 		left:50%;
-		background: rgb(0,0,0,0.5);
+		background: rgba(255, 248, 185, 0.5);
 		transform: translate(-50%,0);
 		padding: 5px 15px;
 		border-top-right-radius: 5px;
